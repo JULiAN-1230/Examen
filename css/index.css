@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+}
+
+/*Fuentes*/
+h1, h4, nav, footer{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(242, 242, 242);
+}
+
+/*Main*/
+main{
+    color: #3D3C40;
+}
+
+/*Header*/
+header{
+    width: 100%;
+    height: 700px;
+    background-size: 100% 700px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url("../images/spinning-record-player-with-vintage-vinyl.jpg");
+}
+
+.textos-header{
+    color: #D97373;
+    font-size: 30px;
+    display: flex;
+    margin-left: 275px;
+    margin-top: 200px;
+}
+
+/*Nav*/
+nav{
+    text-align: right;
+    padding: 50px;
+    margin-right: 90px;
+}
+
+nav > a{
+    color:#f2f2f2;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+
+/*Introducción*/
+.introduccion{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.introduccion div{
+    text-align: justify;
+    padding-top: 30px;
+}
+
+/*Cartas*/
+.contenedor-card{
+    background-color: rgb(217, 115, 115);
+    margin-top: 5%;
+    grid-template-columns: auto auto auto auto;
+    display:grid;
+    padding: 2%;
+}
+
+.card{
+    width: 300px;
+    margin-right: 55px;
+    box-shadow: 0 5px 10px 0 rgb(104, 52, 52);
+}
+
+.card:hover{
+    box-shadow: 0 10px 20px 0 rgb(104, 52, 52);
+}
+
+.container{
+    background-color: rgb(242, 242, 242);   
+    padding: 30px;
+    height: 250px;
+}
+
+.container h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+.container p{
+    padding-top: 6%;
+}
+
+/*Video*/
+.video{
+    margin-left: 25%;
+    width: 600px;
+    height: 350px;
+    padding: 3%;
+}
+
+/*footer*/
+footer{
+    background-image: conic-gradient(from 177deg at 0% 100%, rgb(84, 71, 63) 0%, rgb(225, 218, 210) 100%);
+    color:#f2f2f2;
+    font-weight: bold;
+}
+
+.footer{
+    text-align: center;
+    padding: 3%;
+}
+
+.footer a{
+    color:#f2f2f2;
+}
+
+/*media*/
+@media screen and (max-width:600px){
+    .contenedor-card {
+        grid-template-columns: auto;
+    }
+    header{
+        width: 100%;
+        height: 500px;
+        background-size: 100% 500px;
+    }
+    .textos-header{
+        font-size: 30px;
+        display: flex;
+        margin-left: 70px;
+        margin-top: 90px;
+    }
+    nav{
+        text-align: right;
+        padding: 15px;
+        margin-right: 5px;
+    }
+    
+    nav > a{
+        margin-right: 20px;
+        font-size: 18px;
+    }
+    .contenedor-card{
+        grid-template-columns: auto;
+    }
+    .card{
+        width: 100%;
+    }
+
+    .video{
+        margin: 0%;
+        width: 100%;
+        height: 200px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+}
